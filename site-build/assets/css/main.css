@@ -15,7 +15,7 @@ body {
 
 .container {
 	width: 1000px;
-	min-height: 300px;
+	min-height: 100px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -23,6 +23,10 @@ body {
 #header {
 	background: #9ac5f6;
 	height: 70px;
+}
+
+#footer {
+	background: #163b65;
 }
 
 #logo {
@@ -58,5 +62,14 @@ body {
 
 #navigation ul li:hover a{
 	color: white;
+}
+
+#home-graphics {
+	background: url('../img/graphics.png');
+	width: 1000px;
+	height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
