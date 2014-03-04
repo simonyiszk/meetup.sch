@@ -2,7 +2,6 @@
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
-	font-family: 'Open Sans Condensed';
 }
 
 body {
@@ -29,15 +28,20 @@ body {
 	background: #163b65;
 }
 
+#content {
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+
 #logo {
 	float: left;
-	padding: 5px;
+	padding: 4px;
 }
 
 #navigation {
 	float: right;
 	height: 70px;
-
+	font-family: 'Open Sans Condensed';
 }
 
 #navigation ul {
@@ -73,3 +77,38 @@ body {
 	background-position: center;
 }
 
+#content-title {
+	text-align: center;
+	font-size: 65px;
+}
+
+#content-description {
+	text-align: center;
+	font-size: 18px;
+}
+
+.speaker-first-row {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.speaker-second-row {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.speaker {
+	float: left;
+	width: 200px;
+}
+
+.speaker-img img {
+	border: 8px solid #006ae3;
+	width: 120px;
+	height: 120px;
+	border-radius: 120px;
+}
