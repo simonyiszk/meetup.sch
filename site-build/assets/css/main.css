@@ -131,3 +131,50 @@ body {
 	font-size: 24px;	
 	font-weight: 400;
 }
+
+#registration-form {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#registration-form input[type=text] {
+	width: 258px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 3px;
+}
+
+#registration-form input[type=email] {
+	width: 258px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 3px;
+}
+
+#registration-form input[type=tel] {
+	width: 258px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 3px;
+}
+
+#registration-form input[type=submit] {
+	width: 260px;
+	padding: 10px;
+	margin: 10px;
+	background: #67aeff;
+	border-radius: 3px;
+	color: white;
+	font-size: 24px;
+	border-bottom: 3px solid #67aeff;
+}
+
+#registration-form input[type=submit]:hover {
+	border-bottom: 3px solid #006ae3;
+}
+
