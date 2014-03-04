@@ -8,6 +8,11 @@ body {
 	background: #ebebeb;
 }
 
+#content div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .clearfix {
 	clear: both;
 }
