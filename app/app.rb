@@ -1,6 +1,7 @@
 require "rubygems"
 require "bundler/setup"
 require "sinatra"
+require "sinatra/reloader" if development?
 
 set :public_folder, File.dirname(__FILE__) + '/assets'
 
@@ -26,4 +27,14 @@ end
 
 get "/regisztracio" do
   erb :signup
+end
+
+post "/reg" do
+  # check required fields
+  if [:name, :organization, :email].all? { |field| !params[field].empty? }
+    # register user
+  else
+    @error = true
+    erb :signup
+  end
 end
