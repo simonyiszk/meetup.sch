@@ -58,6 +58,7 @@ body {
 #footer {
 	background: #163b65;
 	height: 100px;
+	position: relative;
 }
 
 #logo {
@@ -258,5 +259,21 @@ body {
 	height: 200px;
 	overflow: hidden;
 	float: right;
+}
+
+.creator {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	float: right;
+	font-weight: 300;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	color: white;
+}
+
+.creator a {
+	text-decoration: none;
+	color: #ffa41f;
 }
 
