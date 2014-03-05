@@ -4,6 +4,10 @@
 	padding: 0px;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	background: #ebebeb;
 }
@@ -19,7 +23,7 @@ body {
 
 .container {
 	width: 1000px;
-	min-height: 100px;
+	/*min-height: 100px;*/
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
@@ -27,7 +31,7 @@ body {
 
 .thin-container {
 	width: 800px;
-	min-height: 100px;
+	/*min-height: 100px;*/
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
@@ -38,13 +42,22 @@ body {
 	height: 70px;
 }
 
-#footer {
-	background: #163b65;
-}
-
 #content {
 	font-family: 'Open Sans';
 	font-weight: 300;
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+
+#content:after {
+	content: "";
+	display: block;
+	height: 100px;
+}
+
+#footer {
+	background: #163b65;
+	height: 100px;
 }
 
 #logo {
@@ -109,7 +122,7 @@ body {
 }
 
 .speaker-second-row {
-	width: 600px;
+	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -135,7 +148,7 @@ body {
 }
 
 .speaker-name {
-	font-size: 20px;
+	font-size: 20px;	
 	font-weight: 400;
 }
 
