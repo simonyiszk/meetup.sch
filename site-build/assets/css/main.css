@@ -193,3 +193,57 @@ body {
 	margin: 20px;
 }
 
+.contact {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-info {
+	float: left;
+	width: 300px;
+	height: 200px;
+}
+
+.contact-name {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.contact-email {
+	width: 300px;
+	height: 50px;
+}
+
+.contact-phone {
+	width: 300px;
+	height: 50px;
+}
+
+.contact-email img {
+	float: left;
+}
+
+.contact-phone img {
+	float: left;
+}
+
+.contact-email span {
+	float: left;
+	padding: 8px;
+}
+
+.contact-phone span {
+	float: left;
+	padding: 8px;
+}
+
+.contact-img {
+	border: 8px solid #ffa41f;
+	border-radius: 120px;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	float: right;
+}
+
