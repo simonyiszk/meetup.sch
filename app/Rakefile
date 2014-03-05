@@ -1,0 +1,16 @@
+require "bundler/setup"
+require "sequel"
+
+namespace :db do
+  task :create do
+    env = ENV['RACK_ENV'] || 'development'
+    DB = Sequel.sqlite "#{env}.db"
+    DB.create_table :attendees do
+      primary_key :id
+      column :name, String, :null => false
+      column :organization, String, :null => false
+      column :email, String, :null => false
+      column :phone, String
+    end
+  end
+end
