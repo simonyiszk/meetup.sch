@@ -259,6 +259,12 @@ body {
 	height: 200px;
 	overflow: hidden;
 	float: right;
+	text-align: center;
+	background: white;
+}
+
+.contact-img img {
+	width: 150px;
 }
 
 .creator {
