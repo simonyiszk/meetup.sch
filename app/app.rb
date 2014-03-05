@@ -33,7 +33,7 @@ get "/regisztracio" do
   erb :signup
 end
 
-post "/reg" do
+post "/regisztracio" do
   # check required fields
   if [:name, :organization, :email].all? { |field| !params[field].empty? }
     DB[:attendees].insert params
