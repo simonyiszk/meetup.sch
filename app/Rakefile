@@ -3,7 +3,8 @@ require "sequel"
 
 namespace :db do
   task :create do
-    DB = Sequel.sqlite "dev.db"
+    env = ENV['RACK_ENV'] || 'development'
+    DB = Sequel.sqlite "#{env}.db"
     DB.create_table :attendees do
       primary_key :id
       column :name, String, :null => false

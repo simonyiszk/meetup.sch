@@ -7,7 +7,7 @@ require "sequel"
 set :public_folder, File.dirname(__FILE__) + '/assets'
 
 # TODO: set production db
-DB = Sequel.sqlite "dev.db"
+DB = Sequel.sqlite "#{settings.environment}.db"
 
 get "/" do
   erb :index
