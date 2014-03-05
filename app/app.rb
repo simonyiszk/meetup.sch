@@ -18,6 +18,7 @@ get "/eloadok" do
 end
 
 get "/info" do
+  @container_class = 'thin-container'
   erb :info
 end
 
@@ -33,7 +34,7 @@ get "/regisztracio" do
   erb :signup
 end
 
-post "/reg" do
+post "/regisztracio" do
   # check required fields
   if [:name, :organization, :email].all? { |field| !params[field].empty? }
     DB[:attendees].insert params
