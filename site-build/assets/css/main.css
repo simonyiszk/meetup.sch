@@ -185,3 +185,11 @@ body {
 	border-bottom: 3px solid #006ae3;
 }
 
+.partner-row {
+	text-align: center;
+}
+
+.partner-row img {
+	margin: 20px;
+}
+
