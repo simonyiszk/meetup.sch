@@ -2,8 +2,12 @@ require "rubygems"
 require "bundler/setup"
 require "sinatra"
 require "sinatra/reloader" if development?
+require "sequel"
 
 set :public_folder, File.dirname(__FILE__) + '/assets'
+
+# TODO: set production db
+DB = Sequel.sqlite "dev.db"
 
 get "/" do
   erb :index
@@ -32,7 +36,8 @@ end
 post "/reg" do
   # check required fields
   if [:name, :organization, :email].all? { |field| !params[field].empty? }
-    # register user
+    DB[:attendees].insert params
+    erb :reg_success
   else
     @error = true
     erb :signup
