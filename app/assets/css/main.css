@@ -253,6 +253,15 @@ body {
 	padding: 8px;
 }
 
+.contact-facebook img {
+	float: left;
+}
+
+.contact-facebook span {
+	float: left;
+	padding: 9px;
+}
+
 .contact-img {
 	border: 8px solid #ffa41f;
 	border-radius: 120px;

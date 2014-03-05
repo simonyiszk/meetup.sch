@@ -30,6 +30,11 @@ get "/partnerek" do
   erb :partners
 end
 
+get "/program" do
+  @container_class = 'thin-container'
+  erb :program
+end
+
 get "/regisztracio" do
   erb :signup
 end
