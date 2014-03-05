@@ -18,6 +18,7 @@ get "/eloadok" do
 end
 
 get "/info" do
+  @container_class = 'thin-container'
   erb :info
 end
 
