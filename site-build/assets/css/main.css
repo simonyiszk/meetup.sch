@@ -120,15 +120,22 @@ body {
 	width: 200px;
 }
 
-.speaker-img img {
-	border: 8px solid #006ae3;
+.speaker-img {
 	width: 120px;
 	height: 120px;
+	border: 8px solid #006ae3;
 	border-radius: 120px;
+	overflow: hidden;
+	margin: 32px;
+}
+
+.speaker-img img {
+	width: 120px;
+
 }
 
 .speaker-name {
-	font-size: 24px;	
+	font-size: 20px;	
 	font-weight: 400;
 }
 
