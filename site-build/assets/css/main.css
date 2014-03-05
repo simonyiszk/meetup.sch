@@ -284,3 +284,7 @@ body {
 	color: #ffa41f;
 }
 
+.hidden {
+	display: none;
+}
+
