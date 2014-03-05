@@ -259,10 +259,12 @@ body {
 
 .contact-facebook span {
 	float: left;
-	padding: 9px;
+	padding-top: 16px;
+	padding-left: 8px;
 }
 
 .contact-img {
+	margin-top: 30px;
 	border: 8px solid #ffa41f;
 	border-radius: 120px;
 	width: 200px;
