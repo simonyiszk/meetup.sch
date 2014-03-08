@@ -150,7 +150,7 @@ body {
 }
 
 .speaker-name {
-	font-size: 20px;	
+	font-size: 20px;
 	font-weight: 400;
 }
 
@@ -299,3 +299,7 @@ body {
 	display: none;
 }
 
+#results table {
+	width: 100%;
+	margin-bottom: 30px;
+}
