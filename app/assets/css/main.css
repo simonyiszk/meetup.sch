@@ -116,14 +116,21 @@ body {
 }
 
 .speaker-first-row {
-	width: 800px;
+	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 
 .speaker-second-row {
-	width: 800px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.speaker-second-row {
+	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
