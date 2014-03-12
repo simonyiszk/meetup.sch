@@ -129,7 +129,7 @@ body {
 	text-align: center;
 }
 
-.speaker-second-row {
+.speaker-third-row {
 	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
@@ -153,7 +153,6 @@ body {
 
 .speaker-img img {
 	width: 120px;
-
 }
 
 .speaker-name {
