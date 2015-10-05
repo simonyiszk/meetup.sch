@@ -1,0 +1,14 @@
+{
+  "name": "meetup.sch",
+  "version": "0.0.1",
+  "description": "meetup website for sch IT meetups",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "Szabolcs Varadi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.9.8"
+  }
+}
