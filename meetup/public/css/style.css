@@ -27,7 +27,7 @@ body {
 }
 
 .wrap p b {
-    color: #FF9F00;
+    color: #f58253;
 }
 
 a {
@@ -41,7 +41,7 @@ a.on {
 }
 
 h1 {
-	color: #f08c0a;
+	color: #f58253;
 	font-size: 50px;
 	line-height: 75px;
 	text-align: center;
@@ -228,7 +228,8 @@ nav.on {
 	margin: 80px 0 40px;
 	overflow: hidden;
 	position: relative;
-    border-top: 2px solid #FF9F00;
+    /*border-top: 2px solid #FF9F00;*/
+	border-top: 2px solid #FFFFFF;
 }
 
 .section-header-bg {
@@ -326,25 +327,25 @@ textarea {
 }
 
 input[type="submit"] {
-	background-color: #191919;
+	background-color: #63a9d6;
 	cursor: pointer;
-	color: #fff;
+	color: #1b1a18;
 	width: 300px;
 }
 
 input[type="submit"]:hover {
-	background-color: #191919;
+	background-color: #63a9d6;
 }
 
 .submit-button {
-	background-color: #191919;
+	background-color: #87bad7;
 	cursor: pointer;
-	color: #FF9F00;
+	color: #1b1a18;
 	width: 300px;
 }
 
 .submit-button:hover {
-	background-color: #020205;
+	background-color: #63a9d6;
 }
 
 /* speakers, contact */
@@ -425,7 +426,7 @@ h4,
 
 /* footer */
 footer {
-	background-color: #191919;
+	background-color: #2a71a9;
 	color: #fff;
 	font-size: 16px;
 	height: 70px;
