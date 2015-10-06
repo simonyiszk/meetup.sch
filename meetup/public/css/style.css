@@ -156,7 +156,8 @@ nav.on {
 
 .animation-section {
 	padding-top: 185px;
-    background-color: #191919;
+	background-color:#white;
+	/*background-color: #191919;*/
 }
 
 .animation-image {
@@ -241,23 +242,23 @@ nav.on {
 }
 
 .section-information .section-header-bg {
-	background-image: url('../images/header_2.png');
+	background-image: url('../images/header_information.jpg');
 }
 
 .section-registration .section-header-bg {
-	background-image: url('../images/header_3.png');
+	background-image: url('../images/header_registration.jpg');
 }
 
 .section-speakers .section-header-bg {
-	background-image: url('../images/header_4.png');
+	background-image: url('../images/header_presenter.jpg');
 }
 
 .section-contact .section-header-bg {
-	background-image: url('../images/header_5.png');
+	background-image: url('../images/header_contacts.jpg');
 }
 
 .section-partners .section-header-bg {
-	background-image: url('../images/header_5.jpg');
+	background-image: url('../images/header_partners.jpg');
 }
 
 .section-content p {
