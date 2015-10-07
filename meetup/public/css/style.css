@@ -82,7 +82,8 @@ h4 span {
 /* header */
 
 header {
-	background: #191919 url('../images/header_1.png') center center no-repeat;
+	/*background: #191919 url('../images/header_1.png') center center no-repeat;*/
+	background-color:#2a71a9;
     background-size: cover;
 	height: 120px;
 	left: 0;
