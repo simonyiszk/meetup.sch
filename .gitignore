@@ -2,3 +2,4 @@
 *.pid
 .bundle/
 users.yml
+meetup/node_modules/
