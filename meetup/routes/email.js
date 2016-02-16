@@ -11,7 +11,7 @@ db.run('CREATE TABLE IF NOT EXISTS ' + sqlname + ' (id INTEGER PRIMARY KEY AUTOI
 /* post registration. */
 router.post('/', function(req, res) {
 
-    if (date.getTime() > new Date(2015,04,8,00,00,00).getTime()) {
+    if (date.getTime() > new Date(2016,03,8,00,00,00).getTime()) {
 
         res.send('A regisztráció időszaka lezárult.')
     }
