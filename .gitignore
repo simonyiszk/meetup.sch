@@ -1,5 +1,6 @@
 *.db
 *.pid
 .bundle/
+.idea/
 users.yml
 meetup/node_modules/
