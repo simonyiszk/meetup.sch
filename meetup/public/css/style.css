@@ -1,3 +1,14 @@
+@font-face {
+	font-family: AdventPro-Light;
+	src: url(AdventPro-Light.ttf) format("truetype"); /*URL to font*/
+}
+
+@font-face {
+	font-family: AdventPro-Regular;
+	src: url(AdventPro-Regular.ttf) format("truetype"); /*URL to font*/
+}
+
+
 * {
 	box-sizing: border-box;
 	font-family: 'Titillium Web', sans-serif;
@@ -12,6 +23,7 @@ b {
 
 body {
 	height: auto!important;
+	//background-color: black;
 }
 
 /* ordinary stuff */
@@ -27,7 +39,8 @@ body {
 }
 
 .wrap p b {
-    color: #ef8555;
+
+
 }
 
 a {
@@ -83,7 +96,7 @@ h4 span {
 
 header {
 	/*background: #191919 url('../images/header_1.png') center center no-repeat;*/
-	background-color:#2a71a9;
+	background-color:#ae252c;
     background-size: cover;
 	height: 120px;
 	left: 0;
@@ -116,10 +129,11 @@ header p {
 	float: right;
 	font-size: 25px;
 	line-height: 120px;
+
 }
 
 header p span {
-	color: #ef8555;
+	color: black;
 }
 
 nav {
@@ -158,7 +172,7 @@ nav.on {
 .animation-section {
 	padding-top: 185px;
 	background-color:#white;
-	/*background-color: #191919;*/
+
 }
 
 .animation-image {
@@ -231,6 +245,7 @@ nav.on {
 	position: relative;
     /*border-top: 2px solid #FF9F00;*/
 	border-top: 2px solid #FFFFFF;
+
 }
 
 .section-header-bg {
@@ -239,28 +254,34 @@ nav.on {
 	width: 100%;
 }
 
+.section-header h2 {
+	font-family: AdventPro-Light;
+}
+
 .section-information .section-header {
 	margin-top: 0;
+	padding-top: -100px;
+
 }
 
 .section-information .section-header-bg {
-	background-image: url('../images/header_information.jpg');
+	background-image: url('../images/header.png');
 }
 
 .section-registration .section-header-bg {
-	background-image: url('../images/header_registration.jpg');
+	background-image: url('../images/header.png');
 }
 
 .section-speakers .section-header-bg {
-	background-image: url('../images/header_presenter.jpg');
+	background-image: url('../images/header.png');
 }
 
 .section-contact .section-header-bg {
-	background-image: url('../images/header_contacts.jpg');
+	background-image: url('../images/header.png');
 }
 
 .section-partners .section-header-bg {
-	background-image: url('../images/header_partners.jpg');
+	background-image: url('../images/header.png');
 }
 
 .section-content p {
@@ -279,6 +300,7 @@ nav.on {
 	color: #000;
 	line-height: 80px;
 	position: static;
+
 }
 
 .section-information h4 {
@@ -328,25 +350,25 @@ textarea {
 }
 
 input[type="submit"] {
-	background-color: #63a9d6;
+	background-color: #ae252c;
 	cursor: pointer;
-	color: #1b1a18;
+	color: white;
 	width: 300px;
 }
 
 input[type="submit"]:hover {
-	background-color: #63a9d6;
+	background-color: #ae252c;
 }
 
 .submit-button {
-	background-color: #87bad7;
+	background-color: #b7444a;
 	cursor: pointer;
-	color: #1b1a18;
+	color: white;
 	width: 300px;
 }
 
 .submit-button:hover {
-	background-color: #63a9d6;
+	background-color: #ae252c;
 }
 
 /* speakers, contact */
@@ -427,7 +449,7 @@ h4,
 
 /* footer */
 footer {
-	background-color: #2a71a9;
+	background-color: #ae252c;
 	color: #fff;
 	font-size: 16px;
 	height: 70px;
