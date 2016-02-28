@@ -380,7 +380,7 @@ input[type="submit"]:hover {
 	width: 840px;
 }
 
-.contact-item {
+.multiple-contact-item {
 	display: table;
 	margin: 0 auto 60px;
 }
@@ -414,15 +414,19 @@ h4,
 	margin-left: 350px;
 }
 
-.contact-item h4 {
+.multiple-contact-item h4 {
 	font-size: 35px;
 	padding-top: 25px;
 }
 
-.contact-item h3 {
+.multiple-contact-item h3 {
 	color: #666;
 	font-size: 25px;
 	line-height: 40px;
+}
+
+.cir {
+	padding-top: 35px;
 }
 
 /* partners */
