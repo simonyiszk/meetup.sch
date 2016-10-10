@@ -6,7 +6,7 @@ var date = new Date()
 var sqlname = "emails_" + (date.getYear() + 1900) + "_" + ((date.getMonth() + 1) < 7 ? "1" : "2")
 
 var db = new sqlite.Database('../emails.db');
-db.run('CREATE TABLE IF NOT EXISTS ' + sqlname + ' (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, comesfrom TEXT, info TEXT);');
+db.run('CREATE TABLE IF NOT EXISTS ' + sqlname + ' (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT UNIQUE, comesfrom TEXT, info TEXT);');
 
 /* post registration. */
 router.post('/', function(req, res) {
@@ -21,7 +21,9 @@ router.post('/', function(req, res) {
         } else {
             var stmt = db.prepare('INSERT INTO ' + sqlname + ' (name, email, comesfrom, info) VALUES (?, ?, ?, ?)');
 
-            stmt.run(req.body.name, req.body.email, req.body.comesfrom, req.body.info);
+            stmt.run(req.body.name, req.body.email, req.body.comesfrom, req.body.info, function(err) {
+                console.log(err); //TODO: better error handling
+            });
             stmt.finalize();
 
             db.each('SELECT * FROM ' + sqlname, function(err, row) {
