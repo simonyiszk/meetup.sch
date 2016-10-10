@@ -22,7 +22,14 @@ router.post('/', function(req, res) {
             var stmt = db.prepare('INSERT INTO ' + sqlname + ' (name, email, comesfrom, info) VALUES (?, ?, ?, ?)');
 
             stmt.run(req.body.name, req.body.email, req.body.comesfrom, req.body.info, function(err) {
-                console.log(err); //TODO: better error handling
+                if(err) {
+                    console.log(err); //TODO: better error handling
+                    res.send('Már regisztráltak ezzel az e-mail címmel!')
+                }
+                else {
+                    res.send('Köszönjük, hogy regisztráltál!');
+                }
+
             });
             stmt.finalize();
 
@@ -30,7 +37,6 @@ router.post('/', function(req, res) {
                 console.log(row);
             });
 
-            res.send('Köszönjük, hogy regisztráltál!');
         }
     }
 
