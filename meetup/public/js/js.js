@@ -61,8 +61,7 @@ $(document).ready(function() {
 			success: function(data) {
 				console.log(data);
 
-				$('#notification-area').fadeIn('500', hideNotification);
-				$('#notification-area').text(data);
+				$('#registration-form').html("<p>" + data + "</p>");
 			},
 			complete: function(data) {
 				console.log(data);
