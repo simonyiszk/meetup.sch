@@ -336,6 +336,11 @@ h2 {
     transform: rotate(15deg);
 }
 
+.bulb img {
+    height: 67px;
+    width: 50px;
+}
+
 .section-heading {
     background: #26263F;
     margin-top: 0;
