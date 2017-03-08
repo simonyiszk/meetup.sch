@@ -62,7 +62,7 @@ p {
     margin-bottom: 20px;
 }
 .bg-primary {
-    background-color: #272727;
+    background-color: #4f5f80;
 }
 .sm-helper {
     background-color: #26263F;
@@ -71,7 +71,7 @@ p {
     visibility: hidden;
 }
 .bg-dark {
-    background-color: #26263F;
+    background-color: #4f5f80;
     color: #ececec;
 }
 .text-faded {
@@ -119,11 +119,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-    color: #000;
+    color: #4F5F80 !important;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-    color: #000 !important;
+    color: #4F5F80 !important;
     background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -157,7 +157,7 @@ aside {
         color: white;
     }
     .navbar-default.affix {
-        background-color: #4e5f80;
+        background-color: #26263E;
         border-color: rgba(34, 34, 34, 0.05);
     }
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -280,7 +280,7 @@ textarea {
 }
 
 .speaker-item h4 span{
-    color: #808080;
+    color: #999;
     font-size: 15px;
     font-style: italic;
 }
@@ -309,20 +309,51 @@ textarea {
     content: "";
     display: block;
 }
+
+h2 {
+    margin-bottom: 0;
+}
+
+.bulb {
+    width: 70%;
+}
+
+.bulb-left {
+    position: relative;
+    float: left;
+    top: -20px;
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Safari */
+    transform: rotate(-15deg);
+}
+
+.bulb-right {
+    position: relative;
+    top: -20px;
+    float: right;
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Safari */
+    transform: rotate(15deg);
+}
+
 .section-heading {
+    background: #26263F;
     margin-top: 0;
-    padding-top: 30px;
-    margin-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-family: 'Poiret One';
     font-weight: bold;
-    color: white
+    color: white;
+    border-top: 1px solid #4f5f80;
+    border-bottom: 1px solid #4f5f80;
 }
 .section-headingLow {
     margin-top: 0;
     padding-top: 30px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     font-family: 'Poiret One';
     font-weight: bold;
+    margin-top: 30px;
 }
 .service-box {
     max-width: 400px;
@@ -335,7 +366,8 @@ textarea {
 }
 
 #registration {
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .service-box p {
     margin-bottom: 0;
@@ -394,6 +426,7 @@ textarea {
         font-size: 22px;
     }
 }
+
 .call-to-action h2 {
     margin: 0 auto 20px;
 }
