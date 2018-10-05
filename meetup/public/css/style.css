@@ -119,11 +119,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-    color: #008cca !important;                             /* Navbar linkek hover színe*/
+    color: #3f7eba !important;                             /* Navbar linkek hover színe*/
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-    color: #008cca !important;                             /* Navbar linkek hover színe*/
+    color: #3f7eba !important;                             /* Navbar linkek hover színe*/
     background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -342,7 +342,7 @@ h2 {
 }
 
 .section-heading {
-    background: #074c73;                        /*Címek háttérszíne*/
+    background: #3f7eba;                        /*Címek háttérszíne*/
     margin-top: 0;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -814,8 +814,12 @@ input[type="submit"]:hover {
     cursor: pointer;
     color: white;
     width: 300px;
+    -webkit-transition: 0.5s;                           /* Safari */
+    transition: 0.5s;
 }
 
 .submit-button:hover {
-    background-color: #008cca;                      /*Gomb hover színe*/
+    background-color: #3f7eba;                      /*Gomb hover színe*/
+    -webkit-transition: 0.5s;                           /* Safari */
+    transition: 0.5s;
 }
