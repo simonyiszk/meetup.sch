@@ -188,7 +188,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url('../images/meetup-bg-2.jpg');
+    background-image: url('../images/meetup2018.png');
     text-align: center;
     color: white;
 }
@@ -325,6 +325,7 @@ h2 {
     -ms-transform: rotate(-15deg); /* IE 9 */
     -webkit-transform: rotate(-15deg); /* Safari */
     transform: rotate(-15deg);
+    visibility: hidden;
 }
 
 .bulb-right {
@@ -334,6 +335,7 @@ h2 {
     -ms-transform: rotate(15deg); /* IE 9 */
     -webkit-transform: rotate(15deg); /* Safari */
     transform: rotate(15deg);
+    visibility: hidden;
 }
 
 .bulb img {
