@@ -2,7 +2,7 @@ var express = require('express');
 var sqlite = require('sqlite3');
 var router = express.Router();
 
-var db = new sqlite.Database('../contacts.db');
+var db = new sqlite.Database('../db/contacts.db');
 db.run('CREATE TABLE IF NOT EXISTS contacts (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, message TEXT);');
 
 /* GET users listing. */
