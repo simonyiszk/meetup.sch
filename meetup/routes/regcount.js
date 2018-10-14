@@ -5,7 +5,7 @@ var router = express.Router();
 var date = new Date()
 var sqlname = "emails_" + (date.getYear() + 1900) + "_" + ((date.getMonth() + 1) < 7 ? "1" : "2")
 
-var db = new sqlite.Database('../emails.db');
+var db = new sqlite.Database('../db/emails.db');
 
 router.get('/', function(req, res) {
     db.get('SELECT count(id) AS cnt FROM ' + sqlname, function(err, row) {
