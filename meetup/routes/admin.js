@@ -2,8 +2,8 @@ var express = require('express');
 var sqlite = require('sqlite3');
 var router = express.Router();
 
-var contacts = new sqlite.Database('../contacts.db');
-var emails = new sqlite.Database('../emails.db');
+var contacts = new sqlite.Database('../db/contacts.db');
+var emails = new sqlite.Database('../db/emails.db');
 
 /* GET listings. */
 router.get('/', function(req, res) {
