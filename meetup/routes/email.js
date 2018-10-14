@@ -5,7 +5,7 @@ var router = express.Router();
 var date = new Date()
 var sqlname = "emails_" + (date.getYear() + 1900) + "_" + ((date.getMonth() + 1) < 7 ? "1" : "2")
 
-var db = new sqlite.Database('../emails.db');
+var db = new sqlite.Database('../db/emails.db');
 db.run('CREATE TABLE IF NOT EXISTS ' + sqlname + ' (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT UNIQUE, comesfrom TEXT, info TEXT);');
 
 /* post registration. */
