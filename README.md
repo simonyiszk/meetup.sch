@@ -1,15 +1,22 @@
-### meetup.sch site
+# meetup.sch site
 
-#### deploy
+# Fordítás és futtatás
+Node 8.9.3-ra van szükséged a telepítéshez ([részletek](https://github.com/mapbox/node-sqlite3/issues/758#issuecomment-353108852)). Ha újabb van fent, használd az [nvm](https://github.com/nvm-sh/nvm) vagy [nvm-windows](https://github.com/coreybutler/nvm-windows) programot a downgrade-hez.
+```
+nvm install 8.9.3
+nvm use 8.9.3
+```
 
-a következő packagekre lesz szükséged: node npm
+Adminisztrátorként futtasd PowerShellben ezt a parancsot:
+`npm i -g windows-build-tools`.
 
-a szerver elindítása előtt telepítened kell a szükséges modulokat:
+Most már telepítheted a projektet:
+```
+cd meetup
+npm i
+node app.js
+```
 
-`cd meetup`
+Ha mindent jól csináltál, az oldalt itt találod: http://localhost:3003
 
-`npm install express serve-favicon morgan cookie-parser body-parser sqlite3 ejs`
-
-`node app.js`
-
-a forráson végzett változtatások csak a szerver újraindítása után látszanak
+<b>Fontos:</b> A forráson végzett változtatások csak a szerver újraindítása után látszanak.
